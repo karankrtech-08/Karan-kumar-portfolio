@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Kumar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-dark text-slate-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-darker/90 backdrop-blur-sm z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl sm:text-2xl font-bold gradient-text">Karan Kumar</a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-slate-200 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-4 lg:space-x-8">
+                    <a href="#home" class="nav-link active text-sm lg:text-base">Home</a>
+                    <a href="#about" class="nav-link text-sm lg:text-base">About</a>
+                    <a href="#education" class="nav-link text-sm lg:text-base">Education</a>
+                    <a href="#skills" class="nav-link text-sm lg:text-base">Skills</a>
+                    <a href="#projects" class="nav-link text-sm lg:text-base">Projects</a>
+                    <a href="#certifications" class="nav-link text-sm lg:text-base">Certifications</a>
+                    <a href="#contact" class="nav-link text-sm lg:text-base">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2">
+                <a href="#home" class="block py-2 nav-link active text-sm">Home</a>
+                <a href="#about" class="block py-2 nav-link text-sm">About</a>
+                <a href="#education" class="block py-2 nav-link text-sm">Education</a>
+                <a href="#skills" class="block py-2 nav-link text-sm">Skills</a>
+                <a href="#projects" class="block py-2 nav-link text-sm">Projects</a>
+                <a href="#certifications" class="block py-2 nav-link text-sm">Certifications</a>
+                <a href="#contact" class="block py-2 nav-link text-sm">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918294421965" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-16 sm:pt-20">
+        <div class="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Karan Kumar</span></h1>
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-slate-300">Web Developer (MERN Stack)</h2>
+                <p class="text-base sm:text-lg mb-6 sm:mb-8 text-slate-400 max-w-lg mx-auto md:mx-0">
+                    I build exceptional digital experiences that are fast, accessible, and visually appealing. 
+                    Let's create something amazing together.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-6 py-3 rounded-full btn-primary font-medium text-sm sm:text-base">Hire Me</a>
+                    <a href="#projects" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition text-sm sm:text-base">View Work</a>
+                </div>
+                <div class="flex justify-center md:justify-start mt-6 sm:mt-8 space-x-4">
+                    <a href="https://github.com/karankrtech-08" target="_blank" class="social-icon text-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-primary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/karan-kumar-595424287/" target="_blank" class="social-icon text-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/karankrtech" target="_blank" class="social-icon text-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-400">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_karankr_08?igsh=MWNrcWI4bm43NmxpMA==" target="_blank" class="social-icon text-lg w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-pink-600">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+                <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                    <div class="relative w-full h-full rounded-full border-4 border-slate-800 floating overflow-hidden">
+                        <img src="./assets/Profile/profile-pic.jpeg" alt="Karan Kumar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-20 bg-darker">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">About <span class="gradient-text">Me</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
+                        <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary to-secondary blur-xl opacity-20"></div>
+                        <div class="relative w-full h-full rounded-2xl border-4 border-slate-800 overflow-hidden">
+                            <img src="./assets/Profile/profile-pic-2.jpeg" alt="Karan Kumar" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3 md:pl-8 lg:pl-12 mt-8 md:mt-0">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Who am I?</h3>
+                    <p class="text-slate-400 mb-4 sm:mb-6 text-sm sm:text-base">
+                        Hello 👋 I’m Karan Kumar, a passionate Web Developer (MERN STACK) & Full Stack in progress and BCA student in Artificial Intelligence & Data Science at Vivekananda Global University. I enjoy building modern web applications with clean, efficient code and excellent user experiences, while also exploring the transformative power of AI and Cloud Computing.
+                    </p>
+                    <p class="text-slate-400 mb-4 sm:mb-6 text-sm sm:text-base">
+                        💡 My journey so far has been shaped by hands-on projects, industry-recognized certifications, and continuous learning. I’ve earned certifications from AWS Academy, Red Hat Academy, and Microsoft Learn, covering areas like cloud infrastructure, enterprise application development, and machine learning. One of my proudest achievements is developing the Smart AI Assistant for Automated Customer Support, showcased at Technovation-2024, where I combined my knowledge of AI, NLP, and cloud technologies to create an innovative solution.               
+                    </p>
+                    <p class="text-slate-400 mb-4 sm:mb-6 text-sm sm:text-base">
+                        🌟 I believe in continuous growth, innovation, and applying technology to solve real-world challenges. My current focus is on deepening my expertise in Cloud Computing, AI, and Full Stack Development, aiming to contribute to impactful, scalable, and future-ready solutions.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                        <div>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Name: <span class="text-slate-300">Karan Kumar</span></h4>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Email: <span class="text-slate-300">karankrtech@gmail.com</span></h4>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Phone: <span class="text-slate-300">+91 (829) 442-1965</span></h4>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Age: <span class="text-slate-300">19</span></h4>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Experience: <span class="text-slate-300">Fresher</span></h4>
+                            <h4 class="font-semibold mb-2 text-sm sm:text-base">Location: <span class="text-slate-300">Rajasthan, Jaipur, India</span></h4>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="./assets/resume/karan kumar resume.pdf" download class="px-6 py-3 rounded-full btn-primary font-medium text-sm sm:text-base text-center">
+                            <i class="fas fa-download mr-2"></i>Download CV
+                        </a>
+                        <a href="#contact" class="px-6 py-3 rounded-full border border-primary text-primary font-medium hover:bg-primary/10 transition text-sm sm:text-base text-center">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="py-16 sm:py-20 bg-dark">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Education</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="relative max-w-3xl mx-auto">
+                <!-- Timeline line - Hidden on mobile, visible on medium screens and up -->
+                <div class="hidden md:block absolute left-1/2 h-full w-0.5 bg-slate-700 transform -translate-x-1/2"></div>
+                
+                <!-- Mobile timeline line -->
+                <div class="md:hidden absolute left-6 h-full w-0.5 bg-slate-700"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="mb-8 flex w-full timeline-item">
+                    <div class="hidden md:block order-1 w-5/12"></div>
+                    <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg ml-10 md:ml-0">
+                        <h4 class="text-lg font-bold mb-2">Bachelor of Computer Applications (BCA)</h4>
+                        <p class="text-sm text-slate-400 mb-2">Vivekananda Global University, Jaipur • 2023 - 2026</p>
+                        <p class="text-slate-300 text-sm">
+                            Currently pursuing my graduation in Computer Applications with focus on software development, 
+                            database management, and web technologies.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="mb-8 flex w-full timeline-item">
+                    <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg ml-10 md:mr-4">
+                        <h4 class="text-lg font-bold mb-2">Class 12 (Science)</h4>
+                        <p class="text-sm text-slate-400 mb-2">• BSEB Board(2021 - 2023)10+2 v.s. inter college chhapra, saran Bihar Intermediate of science (I.sc) </p>
+                        <p class="text-slate-300 text-sm">
+                            Completed senior secondary education with Physics, Chemistry, and Mathematics as main subjects.
+                        </p>
+                    </div>
+                    <div class="hidden md:block order-1 w-5/12"></div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="mb-8 flex w-full timeline-item">
+                    <div class="hidden md:block order-1 w-5/12"></div>
+                    <div class="order-1 w-full md:w-5/12 px-4 py-4 bg-slate-800 rounded-lg shadow-lg ml-10 md:ml-0">
+                        <h4 class="text-lg font-bold mb-2">Class 10</h4>
+                        <p class="text-sm text-slate-400 mb-2">  • BSEB Board(2020 - 2021)B. Seminary high school chhapra Secondary School</p>
+                        <p class="text-slate-300 text-sm">
+                            Completed secondary education with distinction in Science and Mathematics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-20 bg-darker">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Technical Skills</h3>
+                    
+                    <div class="space-y-4 sm:space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">HTML/CSS</span>
+                                <span class="text-sm sm:text-base">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">JavaScript</span>
+                                <span class="text-sm sm:text-base">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">React</span>
+                                <span class="text-sm sm:text-base">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">Node.js</span>
+                                <span class="text-sm sm:text-base">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Professional Skills</h3>
+                    
+                    <div class="space-y-4 sm:space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">Communication</span>
+                                <span class="text-sm sm:text-base">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">Teamwork</span>
+                                <span class="text-sm sm:text-base">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">Problem Solving</span>
+                                <span class="text-sm sm:text-base">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-sm sm:text-base">Creativity</span>
+                                <span class="text-sm sm:text-base">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="mt-12 sm:mt-16">
+                <h3 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-center">Tools & <span class="gradient-text">Technologies</span></h3>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-html5 text-3xl sm:text-4xl text-orange-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">HTML5</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-css3-alt text-3xl sm:text-4xl text-blue-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">CSS3</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-js text-3xl sm:text-4xl text-yellow-400 mb-2"></i>
+                        <span class="text-xs sm:text-sm">JavaScript</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-react text-3xl sm:text-4xl text-blue-400 mb-2"></i>
+                        <span class="text-xs sm:text-sm">React</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-node-js text-3xl sm:text-4xl text-green-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">Node.js</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fas fa-database text-3xl sm:text-4xl text-blue-300 mb-2"></i>
+                        <span class="text-xs sm:text-sm">MongoDB</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-git-alt text-3xl sm:text-4xl text-orange-600 mb-2"></i>
+                        <span class="text-xs sm:text-sm">Git</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-npm text-3xl sm:text-4xl text-red-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">npm</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-sass text-3xl sm:text-4xl text-pink-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">Sass</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-figma text-3xl sm:text-4xl text-purple-500 mb-2"></i>
+                        <span class="text-xs sm:text-sm">Figma</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fas fa-terminal text-3xl sm:text-4xl text-gray-300 mb-2"></i>
+                        <span class="text-xs sm:text-sm">VS Code</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 sm:p-6 bg-slate-800 rounded-lg card-hover">
+                        <i class="fab fa-linux text-3xl sm:text-4xl text-white mb-2"></i>
+                        <span class="text-xs sm:text-sm">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+<section id="projects" class="py-16 sm:py-20 bg-dark">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Project 1 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/protofolio- pic -image.png" alt="zerodha-kite Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2"> My-Portfolio</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        A full-featured of My Portfolio-platform built with HTML5, CSS,JavaScript and tailwindcss.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Html</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">JavaScript</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">tailwindcss</span>
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="https://karankumar-08.github.io/Karan-Kumar-Portfolio/" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/Quiz Application-pic.png" alt="zerodha-kite Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Quiz Application</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        A full-featured Quiz Application-platform And Earn certificate built with React, Node.js, and MongoDB.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Html</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">JavaScript</span>
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="https://karankrtech-08.github.io/Interactive-Quiz-Application/" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/karankrtech-08/Interactive-Quiz-Application" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/NovaTask Pro PROJECT.png" alt="zerodha-kite Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">NovaTask Pro</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        NovaTask Pro is a fully-featured, modern task management application built with pure HTML, CSS, and JavaScript.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Html</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">JavaScript</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Bootstrap</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Material UI</span>  
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="https://karankrtech-08.github.io/Nova-Task-Pro/" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/karankrtech-08/Nova-Task-Pro" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/tic-tac-toe.jpeg" alt="zerodha-kite Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">🎮 Neon Tic-Tac-Toe</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        A modern, interactive Tic-Tac-Toe game with stunning neon visuals and advanced features application built with pure HTML, CSS, and JavaScript.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Html</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">JavaScript</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">particles-config.js</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Material UI</span>  
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="https://karankrtech-08.github.io/-Neon-Tic-Tac-Toe/" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/karankrtech-08/-Neon-Tic-Tac-Toe" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/zerodha.png" alt="zerodha-kite Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Zerodha-kite Clone</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        (THIS PROJECT IS IN PROGRESS ) A full-featured Stock Trading-platform built with React, Node.js, and MongoDB.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Html</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">JavaScript</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Bootstrap</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">React</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Material UI</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Node.js</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Express JS</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">MongoDB</span>
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/Zoom.png" alt="Zoom Clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Zoom Clone App</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                        (THIS PROJECT IS IN PROGRESS ) A productivity app for managing tasks with drag-and-drop functionality.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Material UI</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">WebRTC</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">React</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Axios</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Css</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">MongoDB</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Bcrypt</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Crypto</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Express JS</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Socket</span>
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 7 -->
+            <div class="project-card rounded-xl overflow-hidden card-hover">
+                <div class="h-40 sm:h-48 overflow-hidden">
+                    <img src="./assets/Projects/Linkedin.png" alt="Social Media Linkedin clone" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+                <div class="p-4 sm:p-6">
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">Linkedin clone</h3>
+                    <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                       (THIS PROJECT IS IN PROGRESS ) Linkedin clone dashboard for social media metrics with real-time updates.
+                    </p>
+                    <div class="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">React</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Node.js</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">SEO</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">SSR</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Redux Toolkit</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Nextjs</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">REST Http client Tool</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Axios</span>
+                        <span class="px-2 sm:px-3 py-1 bg-slate-700 rounded-full text-xs sm:text-sm">Render</span>
+                    </div>
+                    <div class="flex space-x-3 text-sm">
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-primary hover:text-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8 sm:mt-12">
+            <a href="#" class="px-6 sm:px-8 py-3 rounded-full btn-primary font-medium inline-flex items-center text-sm sm:text-base">
+                View All Projects <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 sm:py-20 bg-darker">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Certifications</span></h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                 <!-- Certification 1 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate1.png" alt="Research Paper Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">AWS Academy Graduate – Cloud Foundations</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            AWS Academy Cloud Foundations certification, gaining core knowledge of cloud computing, AWS services, and practical cloud concepts
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_aws-awsacademy-cloudcomputing-activity-7379186460081664000-5_d0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Certification 2 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate2.png" alt="Research Paper Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Red Hat OpenStack Administration I: Core Operations for Domain Operators (CL110)</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            Smart AI Assistant for Automated Customer Support, Technovation-2024
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_aws-awsacademy-redhat-activity-7379188101820141568-lf0A?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certification 3 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate3.png" alt="Research Paper Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Fundamentals of Machine Learning</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            Microsoft Learn certification in Fundamentals of Machine Learning, gaining strong foundation in ML concepts, algorithms, and applications.
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_ai-innovation-research-activity-7272223934702350336-sGlo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Certification 4 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate4.png" alt="AWS Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">AWS Cloud with AI Workshop</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            Linux World, Feb 2024 - Hands-on training in AWS services and AI
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_i-am-pleased-to-share-that-i-have-successfully-activity-7225141291766923264-iY6j?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Certification 5 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate5.png" alt="Research Paper Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Research Paper Presentation</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            Smart AI Assistant for Automated Customer Support, Technovation-2024
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_ai-innovation-research-activity-7272223934702350336-sGlo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certification 6 -->
+                <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-40 sm:h-48 overflow-hidden">
+                        <img src="./assets/Certificate/certificate6.png" alt="AI Essentials Certificate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">EXIN BCS AI Essentials</h3>
+                        <p class="text-slate-400 mb-3 sm:mb-4 text-sm">
+                            Certified in AI fundamentals, ethical considerations, and real-world applications
+                        </p>
+                        <div class="flex space-x-3 text-sm">
+                            <a href="https://www.linkedin.com/posts/karan-kumar-595424287_artificialintelligence-certification-exin-activity-7260585807336415232-WWtX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWm4EEBPeW_YkedeUca36TyjvM_eHEplEU" target="_blank" class="text-primary hover:text-secondary">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Contact Section -->
+<section id="contact" class="py-16 sm:py-20 bg-dark">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            <div>
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Contact Information</h3>
+                <p class="text-slate-400 mb-6 sm:mb-8 text-sm sm:text-base">
+                    Feel free to reach out to me for any questions or opportunities. 
+                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                </p>
+                
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-2 sm:p-3 rounded-full mr-3 sm:mr-4">
+                            <i class="fas fa-map-marker-alt text-primary text-lg sm:text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-sm sm:text-base">Location</h4>
+                            <p class="text-slate-400 text-sm sm:text-base">Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-2 sm:p-3 rounded-full mr-3 sm:mr-4">
+                            <i class="fas fa-envelope text-primary text-lg sm:text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-sm sm:text-base">Email</h4>
+                            <p class="text-slate-400 text-sm sm:text-base">karankrtech@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-2 sm:p-3 rounded-full mr-3 sm:mr-4">
+                            <i class="fas fa-phone-alt text-primary text-lg sm:text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 text-sm sm:text-base">Phone</h4>
+                            <p class="text-slate-400 text-sm sm:text-base">+91 (829) 442-1965</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 sm:mt-8">
+                    <h4 class="font-bold mb-3 sm:mb-4 text-sm sm:text-base">Follow Me</h4>
+                    <div class="flex space-x-3 sm:space-x-4">
+                        <a href="https://github.com/karankrtech-08" target="_blank" class="social-icon w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-primary">
+                            <i class="fab fa-github text-lg sm:text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karan-kumar-595424287/" target="_blank" class="social-icon w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-600">
+                            <i class="fab fa-linkedin-in text-lg sm:text-xl"></i>
+                        </a>
+                        <a href="https://x.com/karankrtech" target="_blank" class="social-icon w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-blue-400">
+                            <i class="fab fa-twitter text-lg sm:text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_karankr_08?igsh=MWNrcWI4bm43NmxpMA==" target="_blank" class="social-icon w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-slate-800 hover:bg-pink-600">
+                            <i class="fab fa-instagram text-lg sm:text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 lg:mt-0">
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Send Me a Message</h3>
+            
+                <form class="space-y-4 sm:space-y-6" id="contact-form" action="https://formspree.io/f/mldpnnra" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium text-sm sm:text-base">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none text-sm sm:text-base" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 font-medium text-sm sm:text-base">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none text-sm sm:text-base" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 font-medium text-sm sm:text-base">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none text-sm sm:text-base" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 font-medium text-sm sm:text-base">Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none text-sm sm:text-base" required></textarea>
+                    </div>
+                    <button type="submit" class="px-6 sm:px-8 py-3 rounded-full btn-primary font-medium w-full text-sm sm:text-base">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="bg-darker py-8 sm:py-12">
+    <div class="container mx-auto px-4 sm:px-6">
+        <!-- Centered Content -->
+        <div class="flex flex-col items-center text-center">
+            <div class="mb-6">
+                <a href="#" class="text-xl sm:text-2xl font-bold gradient-text">Karan Kumar</a>
+                <p class="text-slate-400 mt-2 text-sm">© 2025 Karan Kumar. All rights reserved.</p>
+            </div>
+            
+            <div class="flex space-x-4 sm:space-x-6 mb-6">
+                <a href="https://github.com/karankrtech-08" target="_blank" class="text-slate-400 hover:text-primary transition">
+                    <i class="fab fa-github text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/karan-kumar-595424287/" target="_blank" class="text-slate-400 hover:text-blue-600 transition">
+                    <i class="fab fa-linkedin-in text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://x.com/karankrtech" target="_blank" class="text-slate-400 hover:text-blue-400 transition">
+                    <i class="fab fa-twitter text-lg sm:text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/_karankr_08?igsh=MWNrcWI4bm43NmxpMA==" target="_blank" class="text-slate-400 hover:text-pink-600 transition">
+                    <i class="fab fa-instagram text-lg sm:text-xl"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center text-slate-500 text-sm">
+            <p>Made with <i class="fas fa-heart text-red-500"></i> and lots of <i class="fas fa-coffee text-amber-500"></i></p>
+        </div>
+    </div>
+</footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 w-10 h-10 sm:w-12 sm:h-12 bg-primary rounded-full flex items-center justify-center text-white shadow-lg hidden z-40">
+        <i class="fas fa-arrow-up text-sm sm:text-base"></i>
+    </button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: -6px;
+    top: 20px;
+    background: linear-gradient(135deg, #0ea5e9, #7e22ce);
+    z-index: 10;
+}
+
+.skill-bar {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #1e293b;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    transition: width 1s ease-in-out;
+    width: 0;
+}
+
+.project-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    box-shadow: 5px 5px 15px rgba(2, 6, 23, 0.5), 
+                -5px -5px 15px rgba(30, 41, 59, 0.5);
+}
+
+.contact-input {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+    color: #e2e8f0;
+}
+
+.contact-input:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+    outline: none;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    transition: all 0.3s ease;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(14, 165, 233, 0.3);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+}
+
+/* 3D Effects */
+.card-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.card-3d:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* Certificate images styling */
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Profile images styling */
+img {
+    transition: transform 0.3s ease;
+}
+
+.floating:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    .timeline-item::before {
+        left: 4px;
+    }
+    
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline-item::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .skill-bar {
+        height: 8px;
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .whatsapp-float {
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        font-size: 30px;
+    }
+}
+/* Project images hover effect */
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Fallback background if image doesn't load */
+.project-image-fallback {
+    background: linear-gradient(145deg, #0ea5e9, #7e22ce);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
